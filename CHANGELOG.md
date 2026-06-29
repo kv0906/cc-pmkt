@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 <!-- New merged PR entries are inserted here automatically. -->
 
+## [2026.06.29] - 2026-06-29
+
+<!-- New merged PR entries are inserted here automatically. -->
+
 ### Added
 - **HTML artifact pipeline** — preview vault notes as styled HTML before sharing; markdown stays source of truth
 - **`/preview` skill** — render docs, decisions, progress reports as HTML and open in browser; supports file paths plus `progress`, `decide`, `block`, `meet`, `doc` synthesis modes
@@ -203,8 +207,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - PM Coach output style
 - GitHub Actions workflow for changelog automation
 
-[Unreleased]: https://github.com/kv0906/pm-kit/compare/v2026.04.05...HEAD
-[2026.04.05]: https://github.com/kv0906/pm-kit/compare/v2026.03.11...v2026.04.05
+[Unreleased]: https://github.com/kv0906/pm-kit/compare/v2026.06.29...HEAD
+[2026.06.29]: https://github.com/kv0906/pm-kit/compare/v2026.04.05...v2026.06.29[2026.04.05]: https://github.com/kv0906/pm-kit/compare/v2026.03.11...v2026.04.05
 [2026.03.11]: https://github.com/kv0906/pm-kit/compare/v2026.03.06.3...v2026.03.11
 [2026.03.06.3]: https://github.com/kv0906/pm-kit/compare/v2026.03.06.2...v2026.03.06.3
 [2026.03.06.2]: https://github.com/kv0906/pm-kit/compare/v2026.03.06...v2026.03.06.2
