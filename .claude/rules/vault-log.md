@@ -29,6 +29,8 @@ Each entry is an H2 with a consistent prefix for grep-ability:
 | `archive` | Maintainer archives a note |
 | `index-regen` | Maintainer regenerates an index |
 | `health` | `/health` runs a vault check |
+| `preview` | `/preview` renders HTML preview |
+| `report` | `/report` saves executive brief (--save) |
 
 ## How to Append
 

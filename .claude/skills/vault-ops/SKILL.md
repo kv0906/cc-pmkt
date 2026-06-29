@@ -23,6 +23,7 @@ pm-kit/
 ├── blockers/{project}/  # Active blockers
 ├── meetings/           # Meeting notes
 ├── reports/            # Generated reports
+│   └── previews/       # HTML previews (/preview, /report --preview)
 └── _archive/           # Archived by YYYY-MM/
 ```
 

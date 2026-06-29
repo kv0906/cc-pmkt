@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shipped: #059669;
+      --wip: #2563eb;
+      --blocked: #dc2626;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+    .page { max-width: 900px; margin: 0 auto; }
+    .top {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .top .label {
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .top h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .top .period { color: var(--muted); font-size: 0.9rem; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .metric {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+    }
+    .metric .value { font-size: 1.75rem; font-weight: 700; line-height: 1; }
+    .metric .label { font-size: 0.75rem; color: var(--muted); margin-top: 0.35rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .metric.shipped .value { color: var(--shipped); }
+    .metric.wip .value { color: var(--wip); }
+    .metric.blocked .value { color: var(--blocked); }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .section h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section.shipped h2 { color: var(--shipped); }
+    .section.wip h2 { color: var(--wip); }
+    .section.blocked h2 { color: var(--blocked); }
+    .content ul { list-style: none; }
+    .content li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .content li:last-child { border-bottom: none; }
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .content th, .content td {
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.75rem;
+      text-align: left;
+    }
+    .content th { background: #f8fafc; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .sev-high { color: var(--blocked); font-weight: 600; }
+    .sev-medium { color: #d97706; font-weight: 600; }
+    .sev-low { color: var(--muted); }
+    .content p { margin-bottom: 0.75rem; color: #334155; }
+    .content a { color: var(--wip); }
+    .footnotes {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .footnotes h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+    .footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 1.5rem;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .metric, .section, .top { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <div class="top">
+      <div class="label">Status Report</div>
+      <h1>{{TITLE}}</h1>
+      <div class="period">{{PROJECT}} · {{DATE}} · {{PERIOD}}</div>
+    </div>
+    {{METRICS}}
+    <div class="content">
+      {{CONTENT}}
+    </div>
+    {{FOOTNOTES}}
+    <div class="footer">Source: {{SOURCE_PATH}} · PM-Kit preview</div>
+  </article>
+</body>
+</html>

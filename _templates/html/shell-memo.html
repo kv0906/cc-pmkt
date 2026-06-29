@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e8e4df;
+      --accent: #2d5a3d;
+      --bg: #faf9f7;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 2rem 1rem 4rem;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 3rem 3.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    }
+    .meta {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .meta span + span::before { content: " · "; }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-bottom: 1.75rem;
+      color: var(--ink);
+    }
+    .content h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: var(--accent);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .content p { margin-bottom: 1rem; }
+    .content ul, .content ol { margin: 0 0 1rem 1.25rem; }
+    .content li { margin-bottom: 0.35rem; }
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.9rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .content th, .content td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+    .content th { background: #f4f2ef; font-weight: 600; }
+    .content blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 0.5rem 0 0.5rem 1rem;
+      margin: 1rem 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .content code {
+      font-family: "SF Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: #f4f2ef;
+      padding: 0.15em 0.35em;
+      border-radius: 3px;
+    }
+    .content a { color: var(--accent); }
+    .footnotes {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .footnotes h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+    .footnotes ol { margin-left: 1.25rem; }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .page { border: none; box-shadow: none; padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <div class="meta">
+      <span>{{PROJECT}}</span>
+      <span>{{DATE}}</span>
+      <span>Memo</span>
+    </div>
+    <h1>{{TITLE}}</h1>
+    <div class="content">
+      {{CONTENT}}
+    </div>
+    {{FOOTNOTES}}
+    <div class="footer">Source: {{SOURCE_PATH}} · PM-Kit preview</div>
+  </article>
+</body>
+</html>

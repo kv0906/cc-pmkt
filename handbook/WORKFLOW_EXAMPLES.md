@@ -168,3 +168,14 @@ Meeting with legal at 2pm about compliance requirements.
 - Follow up on legal meeting outcomes
 - Start payment integration spec
 ```
+
+## Get Help Anytime
+
+```
+/help
+/help workflow
+/help preview
+/help report
+```
+
+Full reference: [HELP_GUIDE.md](HELP_GUIDE.md)

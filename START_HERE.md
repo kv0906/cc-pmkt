@@ -104,8 +104,10 @@ PM-Kit is actively developed. Check for framework updates periodically — your 
 ## Step 12: Get help
 
 ```
+/help
+/help workflow
 /ask what did we decide about auth?
 /health
 ```
 
-Full command reference: see [README.md](README.md).
+Full command reference: [handbook/HELP_GUIDE.md](handbook/HELP_GUIDE.md) · Overview: [README.md](README.md)

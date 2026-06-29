@@ -8,6 +8,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 <!-- New merged PR entries are inserted here automatically. -->
 
+### Added
+- **HTML artifact pipeline** — preview vault notes as styled HTML before sharing; markdown stays source of truth
+- **`/preview` skill** — render docs, decisions, progress reports as HTML and open in browser; supports file paths plus `progress`, `decide`, `block`, `meet`, `doc` synthesis modes
+- **`/report` skill** — executive briefing in plain language (business and user impact, no jargon); optional `--save` and `--preview` flags
+- **`/help` skill** — command reference and workflow cheat sheet; topic-specific help via `/help preview`, `/help report`, etc.
+- **`handbook/HELP_GUIDE.md`** — full help guide covering all commands, workflows, flags, folder map, and troubleshooting
+- **HTML shell templates** — `_templates/html/shell-memo.html`, `shell-prd.html`, `shell-status.html`, `shell-executive.html`
+- **Preview rules** — `.claude/rules/preview-formats.md` defines rendering workflow, wikilink resolution, and output paths
+- **`previews` path** — `reports/previews/` in `_core/config.yaml`
+
 ## [2026.04.05] - 2026-04-05
 
 <!-- New merged PR entries are inserted here automatically. -->
@@ -194,5 +204,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - GitHub Actions workflow for changelog automation
 
 [Unreleased]: https://github.com/kv0906/pm-kit/compare/v2026.04.05...HEAD
-[2026.04.05]: https://github.com/kv0906/pm-kit/compare/v2026.03.11...v2026.04.05[2026.03.11]: https://github.com/kv0906/pm-kit/compare/v2026.03.06.3...v2026.03.11[2026.03.06.3]: https://github.com/kv0906/pm-kit/compare/v2026.03.06.2...v2026.03.06.3[2026.03.06.2]: https://github.com/kv0906/pm-kit/compare/v2026.03.06...v2026.03.06.2[2026.03.06]: https://github.com/kv0906/pm-kit/compare/v2026.03.05...v2026.03.06[2026.02.25.2]: https://github.com/kv0906/pm-kit/compare/v2026.02.25...v2026.02.25.2[2026.02.25]: https://github.com/kv0906/pm-kit/compare/v2026.02.15a...v2026.02.25[2026.02.14]: https://github.com/kv0906/pm-kit/compare/v0.1.1...v2026.02.14[3.1.0]: https://github.com/kv0906/pm-kit/compare/v3.0.0...v3.1.0
+[2026.04.05]: https://github.com/kv0906/pm-kit/compare/v2026.03.11...v2026.04.05
+[2026.03.11]: https://github.com/kv0906/pm-kit/compare/v2026.03.06.3...v2026.03.11
+[2026.03.06.3]: https://github.com/kv0906/pm-kit/compare/v2026.03.06.2...v2026.03.06.3
+[2026.03.06.2]: https://github.com/kv0906/pm-kit/compare/v2026.03.06...v2026.03.06.2
+[2026.03.06]: https://github.com/kv0906/pm-kit/compare/v2026.03.05...v2026.03.06
+[2026.02.25.2]: https://github.com/kv0906/pm-kit/compare/v2026.02.25...v2026.02.25.2
+[2026.02.25]: https://github.com/kv0906/pm-kit/compare/v2026.02.15a...v2026.02.25
+[2026.02.14]: https://github.com/kv0906/pm-kit/compare/v0.1.1...v2026.02.14
+[3.1.0]: https://github.com/kv0906/pm-kit/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/kv0906/pm-kit/releases/tag/v3.0.0

@@ -1,7 +1,7 @@
 {
   "name": "pm-kit",
   "version": "2026.04.05",
-  "description": "AI-augmented knowledge vault for Technical PMs and Engineering Leads — PRDs, sprints, decisions, blockers, daily standups",
+  "description": "AI-augmented knowledge vault for Technical PMs and Engineering Leads — PRDs, sprints, decisions, blockers, daily standups, HTML previews, executive briefs",
   "author": {
     "name": "Van Tran (Will)"
   },
@@ -22,6 +22,9 @@
     "sprint",
     "decisions",
     "blockers",
-    "daily-standup"
+    "daily-standup",
+    "html-preview",
+    "executive-report",
+    "help-guide"
   ]
 }

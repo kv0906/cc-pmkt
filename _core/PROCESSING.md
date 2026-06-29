@@ -116,6 +116,26 @@
 
 ---
 
+### `/preview`
+
+| I-P-O | Description |
+|-------|-------------|
+| **Input** | `{path}` or `progress {project\|all}` or `decide\|block\|meet\|doc {slug}` [--with-links] [--no-open] |
+| **Process** | Read/synthesize → markdown to HTML → resolve wikilinks → apply shell template |
+| **Output** | `reports/previews/{date}-{slug}.html`, open in browser |
+
+---
+
+### `/report`
+
+| I-P-O | Description |
+|-------|-------------|
+| **Input** | `{project\|all}` [--week] [--since] [--save] [--preview] [--risks-only] |
+| **Process** | Gather vault signals → translate to business/user impact → executive brief |
+| **Output** | Terminal brief (default); optional `reports/{date}-executive-brief-{project}.md` and HTML preview |
+
+---
+
 ### `/today`
 
 | I-P-O | Description |
@@ -143,6 +163,16 @@
 | **Input** | `{question}` or `{project}: {question}` |
 | **Process** | Detect query type → search relevant folders → rank results |
 | **Output** | Answer with source links |
+
+---
+
+### `/help`
+
+| I-P-O | Description |
+|-------|-------------|
+| **Input** | Optional topic (`daily`, `preview`, `report`, `export`, `workflow`, etc.) |
+| **Process** | Load `handbook/HELP_GUIDE.md` → extract relevant section |
+| **Output** | Cheat sheet or topic-specific guide (read-only) |
 
 ---
 

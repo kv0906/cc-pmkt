@@ -91,6 +91,8 @@ Updates only touch framework files (skills, templates, scripts, docs). Your note
 | `/today` | Guided daily workflow orchestrator |
 | `/daily` | Multi-project standup logging |
 | `/progress` | Cross-project status synthesis |
+| `/preview` | Render docs and reports as styled HTML |
+| `/report` | Executive brief in plain language (CEO/PO view) |
 | `/block` | Structured blocker capture |
 | `/decide` | Decision records with alternatives |
 | `/doc` | PRD/spec drafting |
@@ -102,6 +104,7 @@ Updates only touch framework files (skills, templates, scripts, docs). Your note
 | `/push` | Commit and sync |
 | `/onboard` | Interactive setup + context loading |
 | `/update` | Check for and apply framework updates |
+| `/help` | Command reference and workflow cheat sheet |
 
 ## Smarter /ask with QMD (Optional)
 
@@ -151,6 +154,7 @@ All compatibility files are symlinks to `CLAUDE.md` (single source of truth). Ru
 | Doc | What It Covers |
 |-----|----------------|
 | [START_HERE.md](START_HERE.md) | 10-step beginner guide |
+| [handbook/HELP_GUIDE.md](handbook/HELP_GUIDE.md) | Full command reference, workflows, and cheat sheet |
 | [handbook/ARCHITECTURE.md](handbook/ARCHITECTURE.md) | How PM-Kit works, project structure, principles |
 | [handbook/QMD_INTEGRATION.md](handbook/QMD_INTEGRATION.md) | QMD setup, troubleshooting, architecture |
 | [handbook/SETUP_GUIDE.md](handbook/SETUP_GUIDE.md) | Installation and first run |

@@ -83,6 +83,8 @@ Skills are invoked with `/skill-name` or automatically by Claude when relevant.
 | `today` | `/today` | Guided daily workflow (standup/sync/review/focus/wrap-up) |
 | `daily` | `/daily` | Multi-project standup with keyword detection |
 | `progress` | `/progress` | Cross-project status synthesis |
+| `preview` | `/preview` | Render vault notes as styled HTML |
+| `report` | `/report` | Executive brief — business/user impact, plain language |
 | `block` | `/block` | Create blocker with severity/owner/due |
 | `decide` | `/decide` | Log decision with alternatives |
 | `doc` | `/doc` | Draft PRD/spec/doc |
@@ -97,6 +99,7 @@ Skills are invoked with `/skill-name` or automatically by Claude when relevant.
 | `notion` | `/notion` | Notion workspace sync, publish, pull |
 | `update` | `/update` | Check for and apply framework updates |
 | `onboard` | `/onboard` | Interactive setup + context loading |
+| `help` | `/help` | Command reference and workflow guide |
 | `vault-ops` | (auto) | Core file read/write/link operations |
 
 ### Export Flags
